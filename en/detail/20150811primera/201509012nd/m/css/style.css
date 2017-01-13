@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+html, body {margin:0;padding:0;}
+img {border:none;}
+
+    /*reset css*/
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form, section {margin: 0;	padding: 0;}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#808080;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+
+#eventWrap img{width:100%}
+#wrap {position:relative; top:0;}
+@media screen and (min-width:320px) and (max-width:360px){
+    .search{width:33%;}
+    .name{font-weight:bold; font-size:10px;}
+    .count{font-weight:bold; font-size:10px;}
+    .page_count{font-size:11px; left:38%;}
+    .pop_name{font-size:12px; margin-left:5px;}
+    .pop_instar{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+}
+@media screen and (min-width:360px) and (max-width:480px){
+    .search{width:26%;}
+    .name{font-weight:bold; font-size:12px;}
+    .count{font-weight:bold; font-size:12px;}
+    .page_count{font-size:13px; left:38%;}
+    .pop_name{font-size:12px; margin-left:5px;}
+    .pop_instar{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:10px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:10px; margin-left:5px; margin-top:-5px;}
+}
+@media screen and (min-width:480px) and (max-width:568px){
+    .search{width:25%;}
+    .name{font-weight:bold; font-size:14px;}
+    .count{font-weight:bold; font-size:12px;}
+    .page_count{font-size:15px; left:38%;}
+    .pop_name{font-size:14px; margin-left:5px;}
+    .pop_instar{font-size:12px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:12px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:12px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:12px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:12px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:12px; margin-left:5px; margin-top:-5px;}
+}
+@media screen and (min-width:568px) and (max-width:640px){
+    .search{width:25%;}
+    .name{font-weight:bold; font-size:16px;}
+    .count{font-weight:bold; font-size:12px;}
+    .page_count{font-size:18px; left:38%;}
+    .pop_name{font-size:17px; margin-left:5px;}
+    .pop_instar{font-size:14px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:14px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:14px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:14px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:14px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:14px; margin-left:5px; margin-top:-5px;}
+}
+@media screen and (min-width:640px) and (max-width:720px){
+    .search{width:25%;}
+    .name{font-weight:bold; font-size:18px;}
+    .count{font-weight:bold; font-size:14px;}
+    .page_count{font-size:20px; left:38%;}
+    .pop_name{font-size:20px; margin-left:5px;}
+    .pop_instar{font-size:16px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:16px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:16px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:16px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:16px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:16px; margin-left:5px; margin-top:-5px;}
+}
+@media screen and (min-width:720px){
+    .search{width:25%;}
+    .name{font-weight:bold; font-size:40px;}
+    .count{font-weight:bold; font-size:30px;}
+    .page_count{font-size:25px; left:38%;}
+    .pop_name{font-size:24px; margin-left:5px;}
+    .pop_instar{font-size:18px; margin-left:-5px; margin-top:-5px;}
+    .pop_in_url{font-size:18px; margin-left:5px; margin-top:-5px;}
+    .pop_face{font-size:18px; margin-left:-5px; margin-top:-5px;}
+    .pop_fa_url{font-size:18px; margin-left:5px; margin-top:-5px;}
+    .pop_blog{font-size:18px; margin-left:-5px; margin-top:-5px;}
+    .pop_bl_url{font-size:18px; margin-left:5px; margin-top:-5px;}
+}

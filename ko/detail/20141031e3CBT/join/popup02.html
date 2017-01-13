@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>이터널시티3</title>
+<style type="text/css">
+
+@font-face{font-family:"NanumGothic"; src:url(../font/NanumGothic.eot), url(../font/NanumGothic.ttf), url(../font/NanumGothic.woff);}
+@font-face{font-family:"NanumGothicBold"; src:url(../font/NanumGothicBold.eot), url(../font/NanumGothicBold.ttf), url(../font/NanumGothicBold.woff);}
+body,p,div,table,img,ul,li,dl,dt,dd,fieldset,textarea,span,a{
+	margin:0px; padding:0px; border:none; border-spacing:0px; border-collapse:collapse;
+	resize:none; list-style:none; font-family: NanumGothic, NanumGothicBlod, dotum, Sans-serif; text-decoration:none;
+	}
+#popup{width:500px; height:500px; position:relative; background:#fff; z-index:999;}
+#top{height:50px; position:relative; margin:0px auto; background:#3ba7ed; line-height:50px; font-weight:bold; font-size:18px; color:#fff; padding-left:20px;}
+
+#in{height:337px; position:relative; margin:0px auto;}/*늘리는 영역*/
+#text{width:460px; height:25px; position:relative; margin:0px auto; text-align:center; font-size:22px; font-weight:bold; top:80px;}
+#text span{color:#3ba7ed;}
+#ca{width:460px; height:130px; border:1px solid #ccc; font-size:12px; position:relative; margin:0px auto; top:130px;}
+/*실패*/
+#focus_img_01{position:relative; left:20px; top:22px;}
+#focus_img_02{position:relative; left:20px; top:12px;}
+#focus_img_03{position:relative; left:20px; top:2px;}
+#focus_text_01{position:relative; top:5px; left:40px;}
+#focus_text_01 span{color:#3ba7ed;}
+#focus_text_02{position:relative; top:-5px; left:40px;}
+#focus_text_03{position:relative; top:-15px; left:40px;}
+/*성공*/
+#focus_01{position:relative; left:20px; top:42px;}
+#focus_02{position:relative; left:20px; top:32px;}
+#text_01{position:relative; top:25px; left:40px;}
+#text_01 span{color:#3ba7ed;}
+#text_02{position:relative; top:15px; left:40px;}
+
+#footer{height:113px; position:relative; margin:0px auto;}
+#btn{width:100px; height:43px; margin:0px auto;}
+</style>
+</head>
+<body>
+	<div id="popup">
+		<div id="top">본인인증</div>
+		<div id="in">
+			<div id="text">본인인증이 <span>완료</span>되었습니다.</div>
+			<div id="ca">
+				<div id="focus_01"><img src="images/focus.png" alt="참고사항"></div><div id="text_01">하단의 <span>계속하기</span> 버튼을 클릭하시면 회원가입을 계속 진행하실 수 있습니다.</div>
+				<div id="focus_02"><img src="images/focus.png" alt="참고사항"></div><div id="text_02">서버 부하로 인한 지연이 있을 수도 있으니, 잠시만 기다려 주시기 바랍니다.</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="btn"><a href="#fffff"><img src="images/back_btn.gif" alt="뒤로가기"></a></div>
+		</div>
+	</div>
+</body>
+</html>

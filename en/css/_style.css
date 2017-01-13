@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*reset*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form {margin: 0;	padding: 0; font-family:'Lato','Nanum Gothic';}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#000;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+table{border:none; border-spacing:0; border-collapse:collapse;}
+tr,td{margin: 0; padding: 0;}
+.hidden{font-size:0; line-height:0; text-indent:9999px; overflow:hidden;}
+
+body{background:#f0f0f0;}
+
+/*header*/
+.topWrap{position:fixed; z-index:99999; width:100%; height:auto; top:0; left:0;}
+.topWrap .gnbMain{position:absolute; top:0; width:100%; background:#48c222; height:70px;}
+.topWrap .gnbMain h1{position:absolute; top:5px; left:30px; font-size:50px;}
+.topWrap .gnbMain h1 a{color:#fff;}
+.topWrap .gnbMain .menu{position:absolute; top:20px; right:0;}
+.topWrap .gnbMain .menu ul li{float:left; font-size:25px;}
+.topWrap .gnbMain .menu ul li a{display:block; margin-right:50px; color:#fff;}
+
+/*mainVisual*/
+.mainVisual{position:relative; width:100%; height:auto; margin:0 auto; top:0; left:0; background:url('../images/main_visual.jpg') no-repeat center; background-size:cover;}
+.mainVisual h1{position:relative; width:100%; top:30%; margin:0 auto; font-size:60px; color:#fff; text-align:center;}
+.mainVisual h1 .pColor{color:#48c222;}
+.mainVisual .mainNext{position:relative; display:block; width:400px; height:100px; top:45%; margin:0 auto; border:1px solid #fff; font-size:26px; text-align:center; line-height:100px; color:#fff;}
+
+/*works*/
+.mainWorks{position:relative; width:100%; height:1500px; margin:0 auto; top:0; left:0;}
+.mainWorks h2{position:absolute; width:100%; top:120px; font-size:40px; text-align:center;}
+
+.mainWorks .thumbnail{position:absolute; width:1425px; top:170px; height:auto; margin:0 auto;}
+.mainWorks .thumbnail ul li{float:left; margin-top:50px; margin-right:75px;}
+
+/*profile*/
+.mainAbout{position:relative; width:100%; height:100%; margin:0 auto; left:0; background:#f0f0f0;}
+.mainAbout h2{font-size:40px; text-align:center; }
+.mainAbout .pBox{position:relative; width:1350px; height:600px; top:50px; margin:0 auto; background:#fff; border-radius:5px;}
+.mainAbout .pBox ul{position:absolute; top:30px; left:120px;}
+.mainAbout .pBox ul li .pTitle{font-size:25px; color:#000;}
+.mainAbout .pBox ul li .pMain{position:relative; top:-25px; left:125px; font-size:20px; color:#666;}
+.mainAbout .pBox .picture{position:absolute; left:950px; top:60px;}
+
+/*contact*/
+.mainContact{position:relative; width:100%; height:100%; margin:0 auto; left:0; top:100px; background:#f0f0f0;}
+.mainContact h2{font-size:40px; text-align:center; }
+.mainContact .conBox{position:relative; width:1350px; height:300px; top:50px; margin:0 auto; text-align:center; font-size:20px;}
+.mainContact .conBox ul li{margin-bottom:10px;}
+.mainContact .mailBox{position:relative; width:1350px; height:300px; margin:0 auto; text-align:center; font-size:20px;}
+
+/*footer*/
+.footer{position:relative; width:100%; height:100px; text-align:center; font-size:20px; line-height:100px; background:#fff;}

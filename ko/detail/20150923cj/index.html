@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="utf-8">
+    <title>이벤트(보기) | CJ제일제당</title>
+    <link href="http://www.cj.co.kr/cj-kr/static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="http://www.cj.co.kr/cj-kr/static/scripts/libs/jquery/jquery-ui/css/jquery-ui-1.10.3.custom.css" type="text/css" media="all" rel="stylesheet">
+    <link href="http://www.cj.co.kr/cj-kr/static/styles/default.base.css" type="text/css" media="all" rel="stylesheet">
+    <link href="http://www.cj.co.kr/cj-kr/static/styles/layout/global.layout.css" type="text/css" media="all" rel="stylesheet">
+    <link href="http://www.cj.co.kr/cj-kr/static/styles/layout/default.layout.css" type="text/css" media="all" rel="stylesheet">
+    <link href="http://www.cj.co.kr/cj-kr/static/styles/default.module.css" type="text/css" media="all" rel="stylesheet">
+    <link href="http://www.cj.co.kr/cj-kr/static/styles/default.content.css" type="text/css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="event.css" />
+    <script type="text/javascript" src="http://www.cj.co.kr/cj-kr/static/scripts/grunted/resources.min.js"></script>
+</head>
+<body style="background-color:#fff;">
+<!-- 소스적용 부분 -->
+<!--SNS 공유 스크립트 연결-->
+<p>
+    <input id="snsTitle" type="hidden" value="snsTitleS?이벤트 타이틀?EsnsTitle" />
+    <input id="snsSumary" type="hidden" value="snsSumaryS?이벤트 상세문구?EsnsSumary" />
+    <input id="snsImg" type="hidden" value="snsImgS?썸네일 주소?EsnsImg" /><!-- 선택입력 -->
+</p>
+
+<div style="position:relative;">
+    <!--이벤트상단-->
+    <h1>
+        <img src="images/a_01.jpg" alt="가을 제철요리를 가장 맛있게 즐기는 방법-CJ제일제당과 함께하는 가을 계절밥상 EVENT! 자세한 내용은 아래에 있습니다." />
+    </h1>
+    <div class="private">
+        <p>
+            온 가족이 함께하는 가을 계절밥상 레시피를 보고 추천해주세요~<br/>
+            추첨을 통해 111분께 경품의 행운을 드립니다~!
+        </p>
+        <dl>
+            <dt>모집인원</dt><dd>111명</dd>
+            <dt>응모기간</dt><dd>9월 30일~10월 25일</dd>
+            <dt>당첨자 발표</dt><dd>10월 29일</dd>
+        </dl>
+    </div>
+    <p style="position: absolute; top:348px; left:80px;"><a href="#event"><img src="images/event_btn01.png" alt="이벤트 참여하기" /></a></p>
+
+    <!--대하요리-->
+    <h1>
+        <img src="images/a_02.jpg" alt="가을 별미 대하 요리 비법-구워도 맛있고, 새우튀김으로도 맛있는 대하! 자세한 내용은 아래에 있습니다." />
+    </h1>
+    <div id="daeha" style="position:absolute; top:451px;">
+        <div class="recipe">
+            <p style="position: absolute; top:116px; left:17px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001623" target="_blank" title="새창"><img src="images/re01.png" alt="대하 굴소스 강정" /></a></p>
+            <div class="private">
+                <p>
+                    한 입 물면 입안에 퍼지는 달콤 짭조름한 소스맛!<br/>
+                    귀한 손님께도 자신 있는 대하요리!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:461px; left:80px;"><a href="http://www.cj.co.kr/cj-kr/products/917" target="_blank" title="새창"><img src="images/product01.png" alt="백설 남해굴소스-제품보기" /></a></p>
+            <p style="position:absolute; top:461px; left:157px;"><a href="http://www.cj.co.kr/cj-kr/products/1517" target="_blank" title="새창"><img src="images/product02.png" alt="건강한 끈기 올리고당-제품보기" /></a></p>
+            <p style="position:absolute; top:461px; left:249px;"><a href="http://www.cj.co.kr/cj-kr/products/1563" target="_blank" title="새창"><img src="images/product03.png" alt="견과유-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:116px; left:343px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001613" target="_blank" title="새창"><img src="images/re02.png" alt="웍소스 대하구이" /></a></p>
+            <div class="private">
+                <p>
+                    잃었던 입맛 살려내는 윅소스로<br/>
+                    불맛이 살아있는 중식 대하구이!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:457px; left:483px;"><a href="http://www.cj.co.kr/cj-kr/products/1152" target="_blank" title="새창"><img src="images/product04.png" alt="웍소스-제품보기" /></a></p>
+            <p style="position:absolute; top:457px; left:566px;"><a href="http://www.cj.co.kr/cj-kr/products/1509" target="_blank" title="새창"><img src="images/product05.png" alt="백설 요리유-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:116px; left:668px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000000809" target="_blank" title="새창"><img src="images/re03.png" alt="대하튀김 덮밥" /></a></p>
+            <div class="private">
+                <p>
+                    밥과 반찬, 소스를 한 그릇에~<br/>
+                    오동통한 대하가 통째로 올라간 대하튀김 덮밥!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:477px; left:768px;"><a href="http://www.cj.co.kr/cj-kr/products/3" target="_blank" title="새창"><img src="images/product06.png" alt="햇반-제품보기" /></a></p>
+            <p style="position:absolute; top:477px; left:867px;"><a href="http://www.cj.co.kr/cj-kr/products/451" target="_blank" title="새창"><img src="images/product07.png" alt="백설 튀김가루-제품보기" /></a></p>
+        </div>
+    </div>
+    <!--꽃게요리-->
+    <h1>
+        <img src="images/a_03.jpg" alt="가을 제철 꽃게 요리 비법-지방이 적고 단백질이 많아 최고의 영양식품, 꽃게! 자세한 내용은 아래에 있습니다." />
+    </h1>
+    <div id="crab" style="position:absolute; top:1116px;">
+        <div class="recipe">
+            <p style="position: absolute; top:114px; left:17px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001199" target="_blank" title="새창"><img src="images/re04.png" alt="간장 액젓게장" /></a></p>
+            <div class="private">
+                <p>
+                    탱탱한 게살 속에는 짭쪼름한 양념이~<br/>
+                    남녀노소 모두의 밥도둑 간장게장!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:449px; left:132px;"><a href="http://www.cj.co.kr/cj-kr/products/907" target="_blank" title="새창"><img src="images/product08.png" alt="백설 자일로스 설탕-제품보기" /></a></p>
+            <p style="position:absolute; top:449px; left:229px;"><a href="http://www.cj.co.kr/cj-kr/products/1167" target="_blank" title="새창"><img src="images/product09.png" alt="하선정 멸치액젓-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:114px; left:343px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000000802" target="_blank" title="새창"><img src="images/re05.png" alt="꽃게 된장전골" /></a></p>
+            <div class="private">
+                <p>
+                    구수하고 시원한 국물과 된장 맛 쏙쏙 밴<br/>
+                    게살맛까지~ 된장국 요리의 최고봉!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:463px; left:439px;"><a href="http://www.cj.co.kr/cj-kr/products/78" target="_blank" title="새창"><img src="images/product10.png" alt="해찬들 재래식 된장-제품보기" /></a></p>
+            <p style="position:absolute; top:463px; left:548px;"><a href="http://www.cj.co.kr/cj-kr/products/1066" target="_blank" title="새창"><img src="images/product11.png" alt="원물 산들애 멸치-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:114px; left:668px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001068" target="_blank" title="새창"><img src="images/re06.png" alt="크림토마토 꽃게 페투치네" /></a></p>
+            <div class="private">
+                <p>
+                    담백한 게살과 조개에 고소하고 상큼한<br/>
+                    크림토마토 소스가 듬뿍, 해산물 파스타의 진수!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:444px; left:783px;"><a href="http://www.cj.co.kr/cj-kr/products/1264" target="_blank" title="새창"><img src="images/product12.png" alt="백설 크림토마토 소스-제품보기" /></a></p>
+            <p style="position:absolute; top:444px; left:879px;"><a href="http://www.cj.co.kr/cj-kr/products/435" target="_blank" title="새창"><img src="images/product13.png" alt="백설 압착 올리브유-제품보기" /></a></p>
+        </div>
+    </div>
+    <!--무 요리-->
+    <h1>
+        <img src="images/a_04.jpg" alt="시원한 가을 무 요리 비법-비타민 C가 풍부! 시원하고 달콤한 가을 무! 자세한 내용은 아래에 있습니다." />
+    </h1>
+    <div id="radish" style="position:absolute; top:1760px;">
+        <div class="recipe">
+            <p style="position: absolute; top:115px; left:17px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001100" target="_blank" title="새창"><img src="images/re07.png" alt="제철 무 멸치조림" /></a></p>
+            <div class="private">
+                <p>
+                    구수한 멸치국물을 듬뿍 머금은 살캉살캉한 무로<br/>
+                    멸치조림의 맛을 업그레이드!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:475px; left:36px;"><a href="http://www.cj.co.kr/cj-kr/products/415" target="_blank" title="새창"><img src="images/product14.png" alt="우리쌀로 만든 태양초 고추장-제품보기" /></a></p>
+            <p style="position:absolute; top:475px; left:137px;"><a href="http://www.cj.co.kr/cj-kr/products/1658" target="_blank" title="새창"><img src="images/product14_1.png" alt="다시다 요리수-제품보기" /></a></p>
+            <p style="position:absolute; top:475px; left:208px;"><a href="http://www.cj.co.kr/cj-kr/products/908" target="_blank" title="새창"><img src="images/product15.png" alt="백설 브라운 자일로스 설탕-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:115px; left:343px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001070" target="_blank" title="새창"><img src="images/re08.png" alt="다담 제철 굴무국" /></a></p>
+            <div class="private">
+                <p>
+                    제철 재료 무와 굴로 쉽게 준비하면서<br/>
+                    깊은 맛을 더한 국물 요리!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:468px; left:452px;"><a href="http://www.cj.co.kr/cj-kr/products/954" target="_blank" title="새창"><img src="images/product16.png" alt="오천년의 신비 꽃소금-제품보기" /></a></p>
+            <p style="position:absolute; top:468px; left:557px;"><a href="http://www.cj.co.kr/cj-kr/products/192" target="_blank" title="새창"><img src="images/product17.png" alt="다담 냉이된장-제품보기" /></a></p>
+        </div>
+        <div class="recipe">
+            <p style="position: absolute; top:115px; left:668px;"><a href="http://www.cj.co.kr/cj-kr/recipes/0000001676" target="_blank" title="새창"><img src="images/re09.png" alt="유자향 무절임" /></a></p>
+            <div class="private">
+                <p>
+                    새콤 달콤한 유자청 소스에 무를 절여<br/>
+                    피클처럼 다양하게 곁들여 먹는 무절임 완성!
+                </p>
+                <p>레시피 더보기</p>
+            </div>
+            <p style="position:absolute; top:449px; left:764px;"><a href="http://www.cj.co.kr/cj-kr/products/907" target="_blank" title="새창"><img src="images/product18.png" alt="백설 자일로스 설탕-제품보기" /></a></p>
+            <p style="position:absolute; top:438px; left:851px;"><a href="http://www.cj.co.kr/cj-kr/products/1501" target="_blank" title="새창"><img src="images/product19.png" alt="백설 100% 자연발효 백포도식초-제품보기" /></a></p>
+        </div>
+    </div>
+
+    <!--앱다운 및 쿠킹클래스 응모하기-->
+    <h1>
+        <img src="images/a_05.jpg" alt="CJ THE KITCHEN 앱 다운로드 및 백설 요리원 쿠킹 클래스 응모하기! 자세한 내용은 아래에 있습니다." />
+    </h1>
+    <div id="app_down">
+        <div class="private">
+            <p><strong>나만의 맞춤 레시피 앱! CJ THE KITCHEN</strong></p>
+            <p>
+                사랑하는 가족을 위한, 레시피 정보를 스크랩 해주세요! 나만의 맞춤 레시피 추천~!<br/>
+                스마트폰을 통해 <strong>CJ THE KITCHEN</strong>과 함께 해보세요.
+            </p>
+        </div>
+        <p style="position:absolute; top:2489px; left:751px;"><a href="http://www.cj.co.kr/cj-kr/site/etc/ctkapp" target="_blank" title="새창"><img src="images/app_btn.png" alt="APP 다운로드" /></a></p>
+    </div>
+    <div id="cooking_class">
+        <h2 class="private">가을 맞이 계절 밥상, 백설 요리원 쿠킹 클래스 응모하기!</h2>
+        <div class="private">
+            <dl>
+                <dt>클래스명</dt><dd>추, 감미로운 맛을 담아</dd>
+                <dt>설명</dt><dd>아이를 위한 가을맞이 클래스</dd>
+                <dt>일시</dt><dd>10월 11일 오후 3시</dd>
+            </dl>
+        </div>
+        <p style="position:absolute; top:2675px; left:47px;"><a href="#"><img src="images/class01.png" alt="신청하기 GO"/> </a></p>
+        <div class="private">
+            <dl>
+                <dt>클래스명</dt><dd>추, 고즈넉한 향을 담아</dd>
+                <dt>설명</dt><dd>주부를 위한 가을맞이 클래스</dd>
+                <dt>일시</dt><dd>10월 13일 오전 11시</dd>
+            </dl>
+        </div>
+        <p style="position:absolute; top:2675px; left:514px;"><a href="#"><img src="images/class02.png" alt="신청하기 GO"/> </a></p>
+    </div>
+
+    <!--이벤트-->
+    <div id="event" style="position:relative;">
+        <h1>
+            <img src="images/a_06.jpg" alt="EVENT. 자세한 내용은 아래에 있습니다." />
+        </h1>
+        <div class="private">
+            <p>
+                우리가족을 위한 CJ제일제당과 함께하는 <strong>가을 계절밥상 레시피 중 가장 맛있어 보이는</strong><br/>
+                <strong>레시피를 하단 댓글로 남겨주세요.</strong> 추첨을 통해 <strong>111분께 경품의 행운</strong>을 드립니다~!
+            </p>
+            <h2>경품내역</h2>
+            <dl>
+                <dt>자이글 적외선 조리기</dt><dd>1명</dd>
+                <dt>백화점 상품권 5만원권</dt><dd>10명</dd>
+                <dt>영화예매권 2매</dt><dd>20명</dd>
+                <dt>투썸플레이스 아메리카노 R 1잔</dt><dd>30명</dd>
+                <dt>CJ 가을밥상 BOX</dt><dd>50명</dd>
+            </dl>
+            <h2>이벤트 당첨 TIP</h2>
+            <ol>
+                <li>
+                    <p>1번</p>
+                    <p>CJ제일제당 해당 레시피에 댓글을 남기면 당첨 확률 UP!!</p>
+                </li>
+                <li>
+                    <p>2번</p>
+                    <p>나의 SNS에 이벤트 내용 공유하고, 선택정보란에 URL 남기면 당첨 확률 UP!</p>
+                </li>
+            </ol>
+        </div>
+        <p style="position:absolute; top:317px; left:755px;"><a id="reFa_X" href="#none;" target="_blank" title="새창"><img src="images/sns01.png" alt="페이스북으로 공유하기" /></a></p>
+        <p style="position:absolute; top:317px; left:806px;"><a id="reKa_X" href="#none;" target="_blank" title="새창"><img src="images/sns02.png" alt="카카오스토리로 공유하기" /></a></p>
+        <p style="position:absolute; top:317px; left:859px;"><a id="reTw_X" href="#none;" target="_blank" title="새창"><img src="images/sns03.png" alt="트위터로 공유하기" /></a></p>
+        <div class="private">
+            <p>제세공과금 22%는 당첨자 본인 부담이며, 경품은 내부사정에 의해 일부 변경될 수 있습니다.</p>
+        </div>
+    </div>
+</div>
+<!--//소스적용 부분 -->
+</body>
+</html>

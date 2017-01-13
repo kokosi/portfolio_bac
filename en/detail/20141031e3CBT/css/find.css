@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{font-family:"NanumGothic"; src:url(../font/NanumGothic.eot), url(../font/NanumGothic.ttf), url(../font/NanumGothic.woff);}
+@font-face{font-family:"NanumGothicBold"; src:url(../font/NanumGothicBold.eot), url(../font/NanumGothicBold.ttf), url(../font/NanumGothicBold.woff);}
+
+/*reset*/
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form {margin: 0;	padding: 0; font-family:'NanumGothic','NanumGothicBold', dotum, Sans-serif;}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#fff;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+table{border:none; border-spacing:0; border-collapse:collapse;}
+tr,td{margin: 0; padding: 0;}
+body{background:#fff;}
+
+/* gnb 영역 */
+#top_gnb{width:100%; height:35px; background-color:#eeeeee; border-bottom:1px solid #cccccc; position:relative; margin:0px auto;}
+#gnb{width:860px; margin:0px auto; position:relative; top:10px;}
+#logo{width:87px; float:left; margin-left:15px;}
+#login_join{width:102px;  margin-left:750px; font-size:12px; font-weight:bold;}
+#login_join a{text-decoration:none; color:#000; font-weight:bold;}
+
+/*아이디찾기메인영역*/
+#find01{width:860px; height:100%; position:relative; margin:0px auto;}
+#find_top{height:37px; position:relative; margin:0px auto; font-size:28px; font-weight:bold; top:80px; }
+
+/*상단버튼영역*/
+#top_button{width:860px; height:50px; position:relative; top:90px; border:1px solid #999;}
+.btn_text li{float:left; width:429px; height:50px; border-right:1px solid #999; text-align:center; line-height:50px; background:#e5e5e5; }
+.btn_text li a{background:#e5e5e5; font-size:22px; font-weight:bold; color:#999; outline:none; display:block;}
+.btn_text li:last-child{border:none; width:430px;}
+.btn_text li a:link{text-decoration:none;}
+.btn_text li.on a{font-size:22px; font-weight:bold; color:#fff; background:#3ba7ed;}
+
+/*상단안내텍스트영역*/
+#find_info{height:75px; position:relative; margin:0px auto; top:120px; border-bottom:1px solid #999; border-top:1px solid #999; font-size:13px; }
+#find_text{line-height:75px;}
+
+/*인증영역*/
+#join_choice{height:400px; position:relative; margin:0px auto; border-bottom:1px solid #000; top:120px;}
+#young{width:330px; height:300px; position:relative; float:left; background:#eee; margin:0px auto; margin-right:50px; margin-left:75px; top:50px;}
+#old{width:330px; height:300px; position:relative; float:left; background:#eee; margin:0px auto; top:50px;}
+.phone_icon{margin-top:36px; text-align:center;}
+.phone_text{text-align:center; font-size:14px; margin-top:20px; line-height:30px}
+.phone_text span{font-size:24px; font-weight:bold;}
+.ipin_icon{margin-top:41px; text-align:center;}
+.ipin_text{text-align:center; font-size:14px; margin-top:32px;line-height:30px}
+.ipin_text span{font-size:24px; font-weight:bold;}
+.injung_join{text-align:center; margin-top:20px;}
+
+/*인증후아이디알림*/
+#find_choice{height:300px; position:relative; margin:0px auto; border-bottom:1px solid #000; top:120px;}
+#find_yourid{width:640px; height:100px; border-top:2px solid #000; border-bottom:2px solid #000; position:relative; margin:0px auto; top:100px;}
+#find_result tr{height:50px; text-align:center; font-size:12px;}
+#find_result th{width:320px; border-bottom:1px solid; font-size:14px;}
+
+/*비밀번호찾기(아이디입력)*/
+#find_pw{height:300px; position:relative; margin:0px auto; border-bottom:1px solid #000; top:120px; background:#f4f4f4;}
+#find_yourpw{position:relative; margin:0px auto; height:35px; width:320px; top:130px;}
+#find_yourpw span{position:relative; line-height:35px; font-weight:bold; font-size:14px;}
+#input_id{width:250px; height:30px; position:relative; left:55px; top:-35px;}
+#userID{width:250px; height:30px;}
+
+/*비밀번호변경*/
+#change_yourpw{position:relative; margin:0px auto; height:90px; width:375px; top:110px; }
+#change_yourpw span{position:relative; line-height:35px; font-weight:bold; font-size:14px;}
+#input_pw01{width:250px; height:30px; position:relative; left:120px; top:-35px;}
+#userPW01{width:250px; height:30px;}
+#pw02{position:relative; top:-20px;}
+#input_pw02{width:250px; height:30px; position:relative; left:120px; top:-55px;}
+#userPW02{width:250px; height:30px;}
+
+/*비밀번호변경완료*/
+#suc_pw{height:400px; position:relative; margin:0px auto; border-bottom:1px solid #000; border-top:1px solid #000; top:120px; font-size:14px;}
+#suc_yourpw{width:360px; height:100px; position:relative; margin:0px auto; text-align:center; line-height:24px; top:180px;}
+#suc_yourpw span{font-size:20px; font-weight:bold;}
+
+/*하단버튼*/
+#find_button{position:relative; top:165px; left:308px; width:400px;}
+#find_button img{margin-right:15px;}
+#findpw_button{position:relative; top:165px; width:112px; margin:0px auto;}
+
+/*하단 중요내용 영역*/
+#focus{font-size:12px; position:relative; margin:0px auto; top:160px;}
+.focus_img{position:relative; margin-top:-10px;}
+.focus_text{position:relative; top:-15px; left:19px;}
+
+/* footer 영역 */
+#footer{width:100%; height:180px; background:#eee; position:relative; margin:0px auto; top:250px; border-top:1px solid #ccc;}
+#footer_jlogin{width:100%; height:180px; background:#eee; position:relative; margin:0px auto; top:250px; border-top:1px solid #ccc;}
+.footer_box{width:860px; margin:0px auto; position:relative; top:30px;}
+.mon_logo{margin-right:20px; float:left;}
+.ft_com{font-size:13px; color:#666;}
+.ft_com a{text-decoration:none; color:#666;}
+.ft_com span{color:#000; font-weight:bold;}
+.ft_info01{color:#666; font-size:12px;}
+.ft_info02{color:#666; font-size:12px;}
+.copy{color:#666; font-size:12px;}
+.copy span{color:#48ac29}

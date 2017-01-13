@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*basic*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+#me {
+  padding-top: 50px;
+}
+/*reset*/
+body,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Nanum Gothic', sans-serif;
+}
+li {
+  list-style-type: none;
+}
+img,
+fieldset,
+iframe {
+  border: 0;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+input {
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+em {
+  font-style: normal;
+}
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+.clear {
+  clear: both;
+}
+table {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  font-size: 0;
+  line-height: 0;
+  text-indent: 9999px;
+  overflow: hidden;
+}
+/*navigation*/
+.navbar {
+  font-weight: bold;
+  background: #48c222;
+  text-align: center;
+  border: none;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+  font-size: 40px;
+}
+.navbar-inverse .navbar-nav {
+  right: 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  text-shadow: none;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #2f7f16;
+  box-shadow: none;
+}
+.navbar-toggle {
+  border: none;
+}

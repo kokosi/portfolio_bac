@@ -1,0 +1,83 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family:"NanumGothic"; src:url(../font/NanumGothic.eot), url(../font/NanumGothic.ttf), url(../font/NanumGothic.woff);}
+@font-face{font-family:"NanumGothicBold"; src:url(../font/NanumGothicBold.eot), url(../font/NanumGothicBold.ttf), url(../font/NanumGothicBold.woff);}
+/*reset*/
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form {margin: 0;	padding: 0; font-family:"NanumGothic", dotum, Sans-serif;}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#fff;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+table{border:none; border-spacing:0; border-collapse:collapse;}
+tr,td{margin: 0; padding: 0;}
+
+body{background:#000;}
+
+/*skip*/
+ul.skip li a{text-indent:-9999px; font-size:0; position:absolute; top:500px;}
+ul.skip li a:focus{text-indent:0; font-size:15px; font-weight:bold; color:#999; text-decoration:none; text-align:center; width:100%; height:25px; line-height:25px; background:#000;}
+
+/*main_wrap*/
+#main_wrap{width:100%; height:1900px; background:url('../images/main_bg.jpg') center no-repeat; background-size:cover; position:relative;}
+/*header*/
+#main_wrap #header{width:100%; height:80px; background:#000; position:relative; margin:0 auto; border-bottom:1px solid #999;}
+#main_wrap #header .main_menu{width:1000px; margin:0 auto; font-size:25px; font-weight:bold; color:#fff; text-align:center;}
+#main_wrap #header .main_menu ul{width:620px; margin:0 auto; position:relative;}
+#main_wrap #header .main_menu ul li{float:left; height:80px; margin-right:60px; line-height:80px;}
+#main_wrap #header .main_menu ul li:nth-child(4){margin-right:0;}
+#main_wrap #header .main_menu ul li a{text-decoration:none; color:#fff;}
+#main_wrap #header .main_menu li a:hover, #menu li a:active{text-decoration:underline; color:#3ba7ed;}
+
+#main_wrap .e3logo{width:1000px; height:200px; position:relative; margin:0 auto; top:0; text-align:center;}
+#main_wrap .e3logo p{padding-top:70px;}
+/*content start*/
+#main_wrap #main_content{width:1000px; height:1590px; position:relative; top:0; margin:0 auto; background:url('../images/main_subg.png'); z-index:9;}
+/*notice*/
+#main_wrap #main_content .notice{width:600px; height:235px; position:absolute; top:25px; left:20px; margin:0 auto; float:left;}
+#main_wrap #main_content .notice .notice_title{height:40px; position:relative;}
+#main_wrap #main_content .notice #more a{font-size:12px; color:#aaa; position:relative; left:443px;}
+#main_wrap #main_content .notice .notice_table{height:175px; position:relative; border-top:2px solid #666; font-size:13px; color:#aaa; top:18px;}
+#main_wrap #main_content .notice .notice_table tr{height:35px; border-bottom:1px solid #444;}
+#main_wrap #main_content .notice .notice_table .notice01 {width:520px; color:#aaa;}
+#main_wrap #main_content .notice .notice_table .notice01 a{color:#aaa;}
+#main_wrap #main_content .notice .notice_table .date {width:80px;}
+/*game_start*/
+#main_wrap #main_content .game_start{width:340px; height:216px; position:absolute; margin:0 auto; z-index:999; right:20px; top:-56px;}
+#main_wrap #main_content .game_start #start_btn{width:340px; height:178px; position:relative; z-index:9999;}
+#main_wrap #main_content .game_start #down_btn{width:340px; height:38px; position:relative; z-index:9999; color:#000;}
+/*login*/
+#main_wrap #main_content .login{width:340px; height:100px; position:absolute; margin:0 auto; background:#444; left:640px; z-index:999; top:160px;}
+#main_wrap #main_content .login .id{width:180px; height:20px; position:relative; z-index:9999; left:37px; top:12px; float:left;}
+#main_wrap #main_content .login .id #id{width:180px; height:20px; border:1px solid #cccccc; background:#777; font:normal 12px/25px "NanumGothic"; color:#444;}
+#main_wrap #main_content .login .password{width:180px; height:20px; position:relative; z-index:9999; left:37px; top:22px; float:left;}
+#main_wrap #main_content .login .password #passwords{width:180px; height:20px; border:1px solid #cccccc; background:#777; font:normal 12px/25px "NanumGothic"; color:#444;}
+#main_wrap #main_content .login .login_btn a{width:78px; height:55px; position:absolute; left:227px; top:12px; background:#222; color:#fff; font-size:15px; text-align:center; line-height:55px;}
+#main_wrap #main_content .login .login_etc{width:200px; position:absolute; font-size:12px; float:left; color:#fff; left:37px; top:75px; margin-right:5px; text-decoration:none;}
+#main_wrap #main_content .login .login_etc li a{float:left; color:#777;}
+/*content*/
+#main_wrap #main_content .content_list{width:960px; height:25px; position:absolute; margin:0 auto; left:20px; top:290px;}
+#main_wrap #main_content .content_list .real_list li{float:left; font-size:20px; color:#eee; font-weight:bold; padding-right:10px; margin-right:10px; border-right:2px solid #eee;}
+#main_wrap #main_content .content_list .real_list li a{color:#eee;}
+#main_wrap #main_content .content_list .real_list li:last-child{border:none}
+#main_wrap #main_content .content_list .real_list li.on a{color:#3ba7ed; float:left;}
+
+#main_wrap #main_content .content_main .content01{width:960px; height:500px; position:absolute; margin:0 auto; top:340px; left:20px;}
+#main_wrap #main_content .content_main .content01 .content01_text{font-size:13px; color:#999; position:absolute; z-index:999999; width:960px; height:500px; top:0;}
+#main_wrap #main_content .content_main .content01 .content01_text span{font-size:15px; font-weight:bold; color:#ccc;}
+
+#main_wrap #main_content .movie{width:960px; height:500px; position:absolute; margin:0 auto; left:20px; top:850px; border-top:1px solid #444;}
+#main_wrap #main_content .movie .video{width:960px; height:450px; border:2px solid #999; position:absolute; top:50px; margin:0 auto;}
+/*footer*/
+#main_wrap #main_content #footer{height:200px; position:absolute; margin:0 auto; top:1410px;}
+#main_wrap #main_content #footer .mon{height:30px; width:960px; margin-left:20px; border-bottom:1px solid #666; border-top:1px solid #666; font-size:12px; color:#666;}
+#main_wrap #main_content #footer .mon p{line-height:30px;}
+#main_wrap #main_content #footer .mon p a{text-decoration:none; color:#666;}
+#main_wrap #main_content #footer .mon p span{color:#999; font-weight:bold;}
+
+#main_wrap #main_content #footer .etc{width:960px; margin-left:20px; margin-top:20px; font-size:12px; color:#666;}
+#main_wrap #main_content #footer .etc #copy span{color:#48ac29}

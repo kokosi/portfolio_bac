@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family:"나눔고딕"; src:url(../font/NanumGothic.eot), url(../font/NanumGothic.ttf), url(../font/NanumGothic.woff);}
+
+body,p,div,table,img,ul,li,dl,dt,dd,fieldset,textarea{
+	margin:0px; padding:0px; border:none; border-spacing:0px; border-collapse:collapse;
+	resize:none; list-style:none; font-family:나눔고딕, 맑은 고딕,  dotum, Sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	width:0px; height:0px; font-size:0px; line-height:0px; position:absolute; overflow:hidden;
+}
+
+body{background:#fff;}
+
+
+/* gnb 영역 */
+#top_gnb{width:100%; height:35px; background-color:#eeeeee; border-bottom:1px solid #cccccc; position:relative; margin:0px auto;}
+#gnb{width:960px; margin:0px auto; position:relative; top:10px;}
+#logo{width:87px; float:left; margin-left:15px;}
+#login_join{width:102px; margin-left:850px; font-size:12px; font-weight:bold;}
+#login_join a{text-decoration:none; color:#000; font-weight:bold;}
+
+/* main 영역 */
+#main{width:100%; position:relative; margin:0px auto;}
+#main_text{width:960px; margin:0px auto; position:relative; top:80px;}
+#top_title{font-size:30px; font-weight:bold;}
+
+/*버튼영역*/
+#top_button{width:960px; height:50px; position:relative; top:20px; border:1px solid #999;}
+.btn_text li{float:left; width:239px; height:50px; border-right:1px solid #999; text-align:center; line-height:50px; background:#e5e5e5; }
+.btn_text li:last-child{border:none; width:240px;}
+.btn_text li a{background:#e5e5e5; font-size:22px; font-weight:bold; color:#999; outline:none; display:block;}
+.btn_text li a:link{text-decoration:none;}
+.btn_text li.on a{font-size:22px; font-weight:bold; color:#fff; background:#3ba7ed;}
+
+/* 일자영역 */
+#top_data{width:960px; height:34px; position:relative; top:50px; border-bottom:1px solid #999; margin:0px auto;}
+.print{float:left; font-size:17px; color:#3ba7ed;}
+.print span{color:#222;}
+.print_btn{float:left; margin-left:5px;}
+.data{float:left; font-size:12px; margin-left:400px; margin-top:2px;}
+
+/*텍스트영역*/
+#rule_text{width:960px; height:100%; position:relative; margin:0px auto; font-size:12px; color:#888; top:80px; line-height:150%;}
+#text_num{font-size:17px; color:#222; font-weight:bold;}
+#text_sub{font-size:14px; color:#222;}
+#text_color{color:#f26e6e;}
+#text_young{font-weight:bold; color:#222;}
+
+#table01{width:800px; height:200px; font-size:13px;}
+#bold01{font-weight:bold; color:#000;}
+#ta01{height:30px; text-align:center; background:#eee;}
+#ta02{height:100px;}
+#ta03{height:39px;}
+#w01{width:160px; font-weight:bold; color:#000;}
+#w02{width:80px; font-weight:bold; color:#000;}
+#table02{width:800px; height:450px; font-size:13px;}
+#ta04 td{padding-left:5px;}
+
+
+/* footer 영역 */
+#footer{width:100%; height:180px; background:#eee; position:relative; margin:0px auto; top:280px; border-top:1px solid #ccc;}
+#footer_box{width:960px; margin:0px auto; position:relative; top:30px;}
+#mon_logo{margin-left:30px; margin-right:20px; float:left;}
+#ft_com{font-size:13px; color:#666;}
+#ft_com a{text-decoration:none; color:#666;}
+#ft_com span{color:#000; font-weight:bold;}
+#ft_info01{margin-left:30px; color:#666; font-size:12px;}
+#ft_info02{margin-left:30px; color:#666; font-size:12px;}
+#copy{margin-left:30px; color:#666; font-size:12px;}
+#copy span{color:#48ac29}

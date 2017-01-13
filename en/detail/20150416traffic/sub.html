@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="동아오츠카 트래픽 사이트">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Dong A Otsuka Web Traffic Service</title>
+	<link rel="stylesheet" type="text/css" href="gnb.css" media="screen">
+	<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		body,ul,li, a, table{font-family:'Nanum Gothic'; margin:0; padding:0; list-style:none; text-decoration:none; border:none; border-spacing:0px; border-collapse:collapse;}
+
+		#wrap{width:100%; height:100%; position:absolute; margin:0 auto; top:91px;}
+		#wrap #mainWrap{width:1000px; margin:0 auto; position:relative;}
+		
+		#wrap #mainWrap #menu{width:187px; height:1197px; background:#035387; position:absolute;}
+		#wrap #mainWrap #menu a{width:187px; height:45px; text-align:center; line-height:45px; color:#63b9ff; font-weight:bold; display:block;}
+		#wrap #mainWrap #menu ul{height:70px; width:185px; border:1px soid #035387; background:#fff; margin-left:1px;}
+		#wrap #mainWrap #menu ul li{position:relative; height:35px; top:-3px;}
+		#wrap #mainWrap #menu ul li a{color:#000; font-size:13px;}
+		#wrap #mainWrap #menu ul li a:hover, a:active, a:visited{font-weight:bold; text-decoration:underline;}
+		
+		#wrap #mainWrap #board{width:813px; position:relative; left:187px;}
+		#wrap #mainWrap #board .board_top{width:783px; position:absolute; left:37px; top:35px;}
+		#wrap #mainWrap #board .board_top p{margin:0; padding:0; font-size:20px; font-weight:bold; height:35px; line-height:35px;}
+		#wrap #mainWrap #board .board_top .search_box{width:783px; height:102px; border-top:1px solid #999; border-bottom:1px solid #999; background:#f9f9f9;}
+		#wrap #mainWrap #board .board_top .search_box .search_word{height:28px; width:504px; line-height:28px; position:relative; top:20px; left:40px;}
+		#wrap #mainWrap #board .board_top .search_box .search_word span{font-size:15px;}
+		#wrap #mainWrap #board .board_top .search_box .search_word .select{width:113px; height:28px; margin:0; padding:0; position:relative; left:90px;}
+		#wrap #mainWrap #board .board_top .search_box .search_word .search_text{width:251px; height:24px; position:relative; left:90px;}
+		#wrap #mainWrap #board .board_top .search_box .search_filter{height:28px; width:504px; line-height:28px; position:relative; top:25px; left:40px;}
+		#wrap #mainWrap #board .board_top .search_box .search_filter span{font-size:15px;}
+		#wrap #mainWrap #board .board_top .search_box .search_filter .grade{width:113px; height:28px; margin:0; padding:0; position:relative; left:90px;}
+		#wrap #mainWrap #board .board_top .search_box .search_filter .use{width:113px; height:28px; margin:0; padding:0; position:relative; left:90px;}
+		
+	</style>
+	</head>
+
+<body>
+
+	<!--상단 GNB -->
+	<header id="gnb">
+		<div class="mainGnb">
+			<a href="#"><img src="images/sub/sub_logo.png" alt="동아오츠카" /></a>
+			<ul class="gnbMenu">
+				<li>
+					<select name="brnad" class="brand">
+						<option>동아오츠카</option>
+						<option>오로나민C</option>
+						<option>포카리스웨트</option>
+					</select>
+				</li>
+				<li><a href="#" style="color:#fdfdfd; font-weight:bold;">Super Admin</a></li>
+				<li><a href="#" style="color:#fdfdfd; font-weight:bold;">사이트 바로가기</a></li>
+				<li><a href="#" style="color:#fdfdfd; font-weight:bold;">Log Out</a></li>
+			</ul>
+		</div>
+		<!--nav-->
+		<div class="nav">
+			<ul class="navMenu">
+				<li id="nav1"><a href="#">관리자 관리</a></li>
+				<li id="nav2"><a href="#">회원 분석</a></li>
+				<li id="nav3"><a href="#">방문자 분석</a></li>
+				<li id="nav4"><a href="#">페이지 뷰</a></li>
+				<li id="nav5"><a href="#">접속 환경 분석</a></li>
+				<li id="nav6"><a href="#">키워드 분석</a></li>
+				<li id="nav7"><a href="#">이벤트 분석</a></li>
+			</ul>
+		</div>
+	</haeder>
+
+	<!--메인영역 시작-->
+	<div id="wrap">
+		<div id="mainWrap">
+			<!--왼쪽 메뉴-->
+			<div id="menu">
+				<a href="#">관리자 관리 ></a>
+				<ul>
+					<li><a href="#">2 Depth 메뉴명</a></li>
+					<li><a href="#">2 Depth 메뉴명</a></li>
+				</ul>
+			</div>
+			<!--메인-->
+			<div id="board">
+				<div class="board_top">
+					<p>관리자 관리</p>
+					<div class="search_box">
+						<p class="search_word">
+							<span>검색어</span>
+							<select name="select" class="select">
+								<option>선택하기</option>
+								<option>선택하기</option>
+								<option>선택하기</option>
+							</select>
+							<input class="search_text" type="text" maxlength="20" />
+						</p>
+						<p class="search_filter">
+							<span>필터링</span>
+							<select name="grade" class="grade">
+								<option>관리자 등급</option>
+								<option>선택하기</option>
+								<option>선택하기</option>
+							</select>
+							<select name="use" class="use">
+								<option>사용여부</option>
+								<option>선택하기</option>
+								<option>선택하기</option>
+							</select>
+						</p>
+						<img src="images/sub/search_btn.png" alt="검색" style="position:absolute; top:55px; right:150px;" />
+					</div>
+					<!--테이블시작-->
+					<table id="table" style="position:relative; top:10px; text-align:center; width:783px; font-size:12px;">
+						<tr class="title" style="width:783px; height:39px; border-top:1px solid #999; border-bottom:1px solid #999;">
+							<th>선택</th><th>번호</th><th>성명</th><th>아이디</th><th>관리자연락처</th><th>관리자부서</th><th>관리자영역</th><th>사용여부</th><th>수정하기</th>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td ><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객지원팀</td>
+							<td>슈퍼어드민</td>
+							<td style="color:red;">사용함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:blue;">사용안함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:red;">사용함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:blue;">사용안함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:red;">사용함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:blue;">사용안함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:red;">사용함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:blue;">사용안함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:red;">사용함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+						<tr style="width:783px; height:39px; border-bottom:1px solid #ddd;">
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>임서영</td>
+							<td>asdf1234</td>
+							<td>010-0000-0000</td>
+							<td>고객영업팀</td>
+							<td>동아오츠카</td>
+							<td style="color:blue;">사용안함</td>
+							<td><a href="#" style="position:relative; left:20px; display:block; width:40px; height:22px; border:1px solid #e5e5e5; line-height:22px; background:#f1f1f1; color:#000; font-weight:bold;">수정</a></td>
+						</tr>
+					</table>
+					<!--테이블 끝-->
+					<!--하단 버튼-->
+					<p style="font-size:12px; position:relative; top:15px; left:645px; width:150px;">
+						<a class="del" href="#" style="display:block; width:40px; height:23px; border:1px solid #e5e5e5; line-height:23px; text-align:center; float:left; margin-right:5px; color:#000;">삭제</a>
+						<a class="new" href="#" style="display:block; width:70px; height:23px; border:1px solid #e5e5e5; line-height:23px; text-align:center; float:left; color:#000;"><img src="images/sub/new.png" alt="신규등록" />신규등록</a>
+					</p>
+					<!--페이지 카운팅-->
+					<div class="page_count" style="text-align:center; font-size:12px; position:relative; width:300px; margin:0 auto;">
+						<a href="#" class="btnPaging" style="display:block; float:left; width:51px; height:21px; border:1px solid #e5e5e5; line-height:21px; margin-right:5px; color:#000;">＜ 이전</a>
+							<a href="#" class="on" style="display:block; float:left; width:27px; height:21px; border:1px solid #006ec7; line-height:21px; margin-right:5px; color:#fff; background:#0389f6;">1</a>
+							<a href="#" style="display:block; float:left; width:27px; height:21px; border:1px solid #e5e5e5; line-height:21px; margin-right:5px; color:#000;">2</a>
+							<a href="#" style="display:block; float:left; width:27px; height:21px; border:1px solid #e5e5e5; line-height:21px; margin-right:5px; color:#000;">3</a>
+							<a href="#" style="display:block; float:left; width:27px; height:21px; border:1px solid #e5e5e5; line-height:21px; margin-right:5px; color:#000;">4</a>
+							<a href="#" style="display:block; float:left; width:27px; height:21px; border:1px solid #e5e5e5; line-height:21px; margin-right:5px; color:#000;">5</a>
+						<a href="#" class="btnPaging" style="display:block; float:left; width:51px; height:21px; border:1px solid #e5e5e5; line-height:21px; color:#000;">다음 ＞</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

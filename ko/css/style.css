@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#me{padding-top:50px;}
+/*reset*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form {margin: 0;	padding: 0; font-family:'Lato','Nanum Gothic', sans-serif;}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#000;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+table{border:none; border-spacing:0; border-collapse:collapse;}
+tr,td{margin: 0; padding: 0;}
+.hidden{font-size:0; line-height:0; text-indent:9999px; overflow:hidden;}
+
+
+
+/*navigation*/
+.navbar {font-weight:bold; background:#48c222; text-align:center; border:none;}
+.navbar-inverse .navbar-brand {color:#fff; font-size:40px;}
+.navbar-inverse .navbar-nav{right:0;}
+.navbar-inverse .navbar-nav > li > a{color:#fff; text-shadow:none;}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover{background:#2f7f16; box-shadow:none;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background:#2f7f16; box-shadow:none;}
+.navbar-toggle{border:none;}
+
+/*mainVisual*/
+.mainVisual{background:url('../images/main_visual.jpg') no-repeat center; background-size:cover; text-align: center; color:#fff; padding-top:15%; height:700px;}
+.mainVisual .pColor{color:#8de671;}
+.mainVisual .mainText > h1{display:block; position:relative; margin:0 auto; width:50%; background:#48c222; padding-bottom:10px;}
+.mainVisual .mainText .subText{font-size:30px; font-weight:400;}
+.mainVisual .btn-outline{color:#fff; border-color:#fff; margin-top:10%;}
+.mainVisual .btn-outline:hover{background:#48c222;}
+
+/*mainWork*/
+.mainWork{text-align:center; padding:75px 0;}
+.mainWork h2{font-weight:600; font-size:3em; color:#444;}
+.mainWork hr{width:20%; border:2px solid #444;}
+.mainWork .workItem{margin-bottom:30px;}
+.mainWork .workItem .goWork{position:relative; margin:0 auto;}
+.mainWork .workItem .caption {position:absolute; width:100%; height:100%; opacity:0; background:rgba(72,194,34,0.9);}
+.mainWork .workItem .caption:hover {opacity:1;}
+.mainWork .workItem .caption .caption-content {position:absolute; top:10%; width:100%; height:20px;  text-align:center; font-size:15px; color:#fff; font-weight:500;}
+.mainWork .workItem .caption .caption-content .btn-outline{color:#fff; border-color:#fff; margin-top:5px;}
+.mainWork .workItem .caption .caption-content .btn-outline:hover, .mainWork .workItem .caption .caption-content .btn-outline:focus{background:#2f7f16;}
+
+/*profile*/
+.mainAbout{background:#f3f3f3; padding:75px 0;}
+.mainAbout h2{font-weight:600; font-size:3em; color:#444;}
+.mainAbout hr{width:20%; border:2px solid #444;}
+.mainAbout .profileBox .profileText{padding-top:10px; padding-left:50px;}
+.mainAbout .profileBox .profileText .profileTitle{font-size:24px; font-weight:500;}
+.mainAbout .profileBox .profileText > p > a{text-decoration:none;}
+.mainAbout .profileBox .profileImg{padding-top:10px; padding-right:20px; text-align:center; color:#48c222; font-weight:500;}
+
+/*skill*/
+.mainSkill{padding:75px 0;}
+.mainSkill h2{font-weight:600; font-size:3em; color:#444;}
+.mainSkill hr{width:20%; border:2px solid #444;}
+.mainSkill .skillItem{margin-bottom:35px;}
+.mainSkill .skillItem > p > img{width:50px; height:50px;}
+.mainSkill .skillItem .skills{position:relative; top:15px; left:10px;}
+
+/*contact*/
+.mainContact{background:#f3f3f3; padding:75px 0;}
+.mainContact h2{font-weight:600; font-size:3em; color:#444;}
+.mainContact hr{width:20%; border:2px solid #444;}
+.mainContact .infoMe > p{font-size:20px; font-weight:400; margin-bottom:10px;}
+.mainContact .infoMe > p > img{width:30px; height:30px;}
+.mainContact .infoMe > p > a{text-decoration:none;}
+.mainContact .mailForm > p{font-size:20px; font-weight:400; margin-bottom:10px;}
+.mainContact #contactForm .formStyle{border-radius:0;}
+.mainContact #contactForm .formBtn{color:#000; border-color:#000; background:none; border-radius:0;}
+.mainContact #contactForm .formBtn:hover{background:#48c222; color:#fff; border-color:#fff;}
+
+/*footer*/
+.footer{text-align:center; padding:20px 0;}
+
+/*media query*/
+@media screen and (max-width: 992px) {
+    .mainContact .mailForm{padding-top:20px;}
+}
+
+@media screen and (max-width: 768px) {
+    .mainText{padding-top:30%;}
+    .mainText > h1{padding-bottom:5px;}
+    .mainVisual .mainText .subText{font-size:20px; font-weight:400;}
+
+    .mainWork .workItem .goWork{display:block; position:relative; margin:0 auto; max-width:300px;}
+
+    .mainContact .mailForm{padding-top:20px;}
+}

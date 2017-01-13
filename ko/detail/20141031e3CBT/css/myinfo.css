@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{font-family:"NanumGothic"; src:url(../font/NanumGothic.eot), url(../font/NanumGothic.ttf), url(../font/NanumGothic.woff);}
+@font-face{font-family:"NanumGothicBold"; src:url(../font/NanumGothicBold.eot), url(../font/NanumGothicBold.ttf), url(../font/NanumGothicBold.woff);}
+
+/*reset*/
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form {margin: 0;	padding: 0; font-family:'NanumGothic','NanumGothicBold', dotum, Sans-serif;}
+li {list-style-type: none;}
+img, fieldset, iframe {border: 0;}
+img {border: none; vertical-align: top;}
+input {vertical-align: middle; -moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+a {text-decoration: none; color:#fff;}
+em {font-style: normal;}
+textarea:focus, input:focus{outline: 0;}
+.clear {clear: both;}
+table{border:none; border-spacing:0; border-collapse:collapse;}
+tr,td{margin: 0; padding: 0;}
+body{background:#fff;}
+
+/* gnb 영역 */
+#top_gnb{width:100%; height:35px; background-color:#eeeeee; border-bottom:1px solid #cccccc; position:relative; margin:0px auto;}
+#gnb{width:860px; margin:0px auto; position:relative; top:10px;}
+#logo{width:87px; float:left; margin-left:15px;}
+#login_join{width:102px; margin-left:750px; font-size:12px; font-weight:bold;}
+#login_join a{text-decoration:none; color:#000; font-weight:bold;}
+
+/*아이디찾기메인영역*/
+#find01{width:860px; height:100%; position:relative; margin:0px auto;}
+#find_top{height:37px; position:relative; margin:0px auto; font-size:28px; font-weight:bold; top:80px; }
+
+/*상단버튼영역*/
+#top_button{width:860px; height:50px; position:relative; top:90px; border:1px solid #999;}
+.btn_text li{float:left; width:286px; height:50px; border-right:1px solid #999; text-align:center; line-height:50px; background:#e5e5e5; }
+.btn_text li a{background:#e5e5e5; font-size:22px; font-weight:bold; color:#999; outline:none; display:block;}
+.btn_text li:last-child{border:none; width:286px;}
+.btn_text li a:link{text-decoration:none;}
+.btn_text li.on a{font-size:22px; font-weight:bold; color:#fff; background:#3ba7ed;}
+
+/*상단안내텍스트영역*/
+#find_info{height:75px; position:relative; margin:0px auto; top:120px; border-bottom:1px solid #999; border-top:1px solid #999; font-size:13px; }
+#find_text{line-height:75px;}
+
+/*정보변경(비밀번호입력)*/
+#change_info{height:300px; position:relative; margin:0px auto; border-bottom:1px solid #000; top:120px; background:#f4f4f4;}
+#ent_pw{width:400px; height:100px; position:relative; text-align:left; top:90px; margin:0px auto; font-size:13px;}
+#ent_pw tr{height:50px;}
+#ent_pw th{width:100px;}
+#ent_pw td{width:300px;}
+.input_PW{width:250px; height:30px; position:relative;}
+.userPW{width:250px; height:30px;}
+
+/*정보변경(변경폼)*/
+#change_you{height:325px; position:relative; margin:0px auto; top:120px; border-bottom:1px solid;}
+#change_user{height:325px; position:relative; margin:0px auto; text-align:left; font-size:13px;}
+.basic_tr{height:45px; border-bottom:1px solid #bbb;}
+.basic_th{width:140px; text-align:left; padding-left:10px;}
+.basic_td{width:720px; color:#999;}
+
+#phone_tr{height:79px; border-bottom:1px solid #bbb;}
+#num{position:relative; top:-4px;}
+#phonefirst{width:89px; height:25px; font-size:15px;}
+#phonesecond{width:88px; height:25px; font-size:15px;}
+#phonelast{width:88px; height:25px; font-size:15px;}
+#sms_check{color:#999; position:relative;}
+#sms{position:relative; top:3px;}
+
+#email_tr{height:109px;}
+#mail_th{position:relative; left:15px;  top:-35px;}
+#email{width:310px; height:25px; font-size:15px;}
+#enter_mail_text{position:relative; color:#999; top:5px;}
+#enter_mail_text span{color:#3ba7ed;}
+#mail_check{position:relative; top:3px;}
+
+/*비밀번호변경*/
+#change_pw{width:400px; height:150px; position:relative; text-align:left; top:70px; margin:0px auto; font-size:13px;}
+#change_pw tr{height:50px;}
+#change_pw th{width:120px;}
+#change_pw td{width:280px;}
+
+/*비밀번호변경완료*/
+#suc_pw{height:400px; position:relative; margin:0px auto; border-bottom:1px solid #000; border-top:1px solid #000; top:120px; font-size:14px;}
+#suc_yourpw{width:360px; height:100px; position:relative; margin:0px auto; text-align:center; line-height:24px; top:180px;}
+#suc_yourpw span{font-size:20px; font-weight:bold;}
+
+/*회원탈퇴*/
+#suc_out{height:100px; position:relative; margin:0px auto; text-align:center; line-height:24px; top:180px;}
+#bold{font-size:20px; font-weight:bold;}
+#color{color:#3ba7ed;}
+
+/*회원탈퇴인증영역*/
+#join_choice{height:400px; position:relative; margin:0px auto; border-bottom:1px solid #000; top:120px;}
+#young{width:330px; height:300px; position:relative; float:left; background:#eee; margin:0px auto; margin-right:50px; margin-left:75px; top:50px;}
+#old{width:330px; height:300px; position:relative; float:left; background:#eee; margin:0px auto; top:50px;}
+.phone_icon{margin-top:36px; text-align:center;}
+.phone_text{text-align:center; font-size:14px; margin-top:20px; line-height:30px}
+.phone_text span{font-size:24px; font-weight:bold;}
+.ipin_icon{margin-top:41px; text-align:center;}
+.ipin_text{text-align:center; font-size:14px; margin-top:32px;line-height:30px}
+.ipin_text span{font-size:24px; font-weight:bold;}
+.injung_join{text-align:center; margin-top:20px;}
+
+/*하단 중요내용 영역*/
+#focus{font-size:12px; position:relative; margin:0px auto; top:160px;}
+.focus_img{position:relative; margin-top:-10px;}
+.focus_text{position:relative; top:-15px; left:19px;}
+
+/*하단버튼(1개)*/
+#change_btn{position:relative; top:165px; margin:0px auto; width:112px;}
+
+/* footer 영역 */
+#footer{width:100%; height:180px; background:#eee; position:relative; margin:0px auto; top:250px; border-top:1px solid #ccc;}
+#footer_jlogin{width:100%; height:180px; background:#eee; position:relative; margin:0px auto; top:250px; border-top:1px solid #ccc;}
+.footer_box{width:860px; margin:0px auto; position:relative; top:30px;}
+.mon_logo{margin-right:20px; float:left;}
+.ft_com{font-size:13px; color:#666;}
+.ft_com a{text-decoration:none; color:#666;}
+.ft_com span{color:#000; font-weight:bold;}
+.ft_info01{color:#666; font-size:12px;}
+.ft_info02{color:#666; font-size:12px;}
+.copy{color:#666; font-size:12px;}
+.copy span{color:#48ac29}

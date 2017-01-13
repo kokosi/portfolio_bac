@@ -1,0 +1,246 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+	<title>ETERNALCITY3</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" /><![endif]-->
+	<meta name="keywords" content="몬스터넷" />
+	<meta name="description" content="이터널시티3 CBT 사이트" />
+	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<!--[if IE 7]><script type="text/javascript" src="../js/lib.IE7.min.js" charset="utf-8" ></script><![endif]-->
+	<!--[if IE 8]><script type="text/javascript" src="../js/lib.IE8.min.js" charset="utf-8" ></script><![endif]-->
+	<!--[if IE 9]><script type="text/javascript" src="../js/lib.IE9.min.js" charset="utf-8" ></script><![endif]-->
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$( ".page_list li a" ).click(function() {
+			$(this).parent().addClass("on").siblings().removeClass("on");
+			return false;
+		});
+		//toggle
+		$(".faq_q_td a").click(function() {
+			$(this).next().slideToggle("fast").parent().parent().siblings().find("p").slideUp("fast");
+			return false;
+		});
+	});
+
+</script>
+
+</head>
+<body>
+<div id="main_wrap">
+
+	<!-- header -->
+	<div id="header">
+		<div class="main_menu">
+			<ul>
+				<li><a href="../sub/sub01_01.html">새소식</a></li>
+				<li><a href="../sub/sub02_01.html">테스터게시판</a></li>
+				<li><a href="../sub/sub03.html">버그리포트</a></li>
+				<li><a href="../sub/sub04.html">FAQ</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="e3logo">
+		<p><a href="../index.html"><img src="../images/e3_logos.png" alt="이터널시티3"></a></p>
+	</div>
+
+	<div id="sub_main">
+		<!-- notice/start/login -->
+		<div class="sub_main_notice">
+			<div class="sub_notice_title">
+				이터널시티3에 궁금한 점이 있으신가요?<br>
+				<span>FAQ</span>
+				<span class="go_to_faq"><a href="../index.html">메인 ></a><a href="../sub/sub04.html"> FAQ</a></span>
+			</div>
+			<div class="mini_notice">
+				<span class="mini_title">공지사항</span><span id="more"><a href="../sub/sub01_01.html">+ 더보기</a></span>
+				<table id="mini_table">
+					<tr>
+						<td class="mini_td"><a href="../sub/sub01_02.html">[공지사항] 블라블라블라블라블라블라블라블라</a></td><td class="mini_date">2014-10-21</td>
+					</tr>
+					<tr>
+						<td class="mini_td"><a href="../sub/sub01_02.html">[공지사항] 블라블라블라블라블라블라블라블라</a></td><td class="mini_date">2014-10-21</td>
+					</tr>
+					<tr>
+						<td class="mini_td"><a href="../sub/sub01_02.html">[공지사항] 블라블라블라블라블라블라블라블라</a></td><td class="mini_date">2014-10-21</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="sub_start">
+			<div class="start_btn"><a href="javascript:alert('게임을 설치해주세요!');"><img src="../images/start_btn.png" alt="게임스타트"></a></div>
+			<div class="down_btn"><a href="../sub/sub_download.html"><img src="../images/down_btn.png" alt="클라이언트 다운로드"></a></div>
+		</div>
+
+		<div class="sub_login">
+			<div class="login">
+				<div class="id"><input type="text" id="id" maxlength="20" title="아이디" placeholder="  아이디"/></div>
+				<div class="password"><input type="password" id="password" maxlength="30" title="비밀번호" placeholder="  비밀번호"/></div>
+				<div class="login_btn"><a href="javascript:alert('아이디가 존재하지 않습니다!');">로그인</a></div>
+				<ul class="login_etc">
+					<li><a href="../join/join01.html">회원가입</a></li>
+					<li><a href="../find/find01.html">&nbsp;| 아이디찾기</a></li>
+					<li><a href="../find/find03.html">&nbsp;| 비밀번호찾기</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--FAQ-->
+		<div class="faq_real">
+			<div class="faq_top">
+				<ul class="faq_list_btn">
+					<li><a href="#ff">전체</a></li>
+					<li><a href="#ff">설치/실행</a></li>
+					<li><a href="#ff">계정</a></li>
+					<li><a href="#ff">게임</a></li>
+					<li><a href="#ff">CBT</a></li>
+				</ul>
+
+				<div class="faq_top_search">
+					<div class="faq_search">
+						<select name="faq_search_data" id="faq_search_data">
+							<option value=1 selected> 전체
+							<option value=2>설치/실행
+							<option value=3>계정
+							<option value=4>게임
+							<option value=5>CBT
+						</select>
+						<input type="text" id="faq_search_text" maxlength="30"/>
+						<a href="#wewe">검색</a>
+					</div>
+				</div>
+			</div>
+		
+		
+			<!-- FAQ게시판영역(리스트테이블) -->
+			<div class="notice_faq">
+				<table class="faq">
+					<tr class="faq_th">
+						<th class="faq_class_th">분류</th><th class="faq_q_th">질문</th>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">Q. 계정이 사라졌어요!</a>
+							<p><br><br>└ 장기간 접속하지 않은 계정은 CBT 기간동안 임의로 삭제됩니다.</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+					<tr class="faq_tr">
+						<td class="faq_class_td">1205</td>
+						<td class="faq_q_td">
+							<a href="#22222">해당 텍스트를 클릭하면 슬라이드 토글됩니다.</a>
+							<p><br><br>슬라이드 토글</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<!-- pageList -->
+		<div class="page_num03">
+			<ul class="page_list">
+				<li class="forward_10"><a href="#22"><img src="../images/forward_10.png" alt="10페이지앞으로"></a></li>
+				<li class="forward"><a href="#22"><img src="../images/forward.png" alt="1페이지앞으로"></a></li>
+				<li class="on"><a href="#22">1</a></li>
+				<li><a href="#22">2</a></li>
+				<li><a href="#22">3</a></li>
+				<li><a href="#22">4</a></li>
+				<li><a href="#22">5</a></li>
+				<li><a href="#22">6</a></li>
+				<li><a href="#22">7</a></li>
+				<li><a href="#22">8</a></li>
+				<li><a href="#22">9</a></li>
+				<li><a href="#22">10</a></li>
+				<li class="back"><a href="#22"><img src="../images/back.png" alt="1페이지뒤로"></a></li>
+				<li class="back_10"><a href="#22"><img src="../images/back_10.png" alt="10페이지뒤로"></a></li>
+			</ul>
+		</div>
+
+		<!--footer-->
+		<div id="footer_faq">
+			<div class="company">
+				<p><a href="javascript:alert('회사홈페이지연결');">회사소개</a> | <a href="../policy/policy01.html">이용약관</a> | <a href="../policy/policy02.html">운영정책</a> | <a href="../policy/policy03.html"><span>개인정보취급방침</span></a> | <a href="../policy/policy04.html">청소년보호정책</a></p>
+			</div>
+			<div class ="etc">
+				<span id="mon_logo"><img src="../images/mon_logo.png" alt="몬스터넷 로고"></span><br><br>
+				<span id="ft_info01">(주)몬스터넷  |  서울시 강남구 삼성동 27-19 부일빌딩 201호  |  FAX 02-6442-4814  |  TEL 070-8255-2587</span><br>
+				<span id="ft_info02">대표이사 권종락  |  사업자등록번호 220-86-08516  |  통신판매업신고번호 제2009-서울강남-02637</span>
+				<br><br>
+				<span id="copy">COPYRIGHT <span>ⓒ MONSTERNET CORPORATION</span> ALL RIGHTS RESERVED.</span>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>

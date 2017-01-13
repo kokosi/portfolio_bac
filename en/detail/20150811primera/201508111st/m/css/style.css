@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+html, body,ul, li {margin:0;padding:0; list-style:none;}
+img {border:none;}
+
+
+#eventWrap img{width:100%}
+#wrap {position:relative;}
+#wrap #go_top{width:720px; position:relative; z-index:999; margin:0px auto;}
+#wrap #go_top a{position:fixed; display:block; top:250px; width:86px; height:86px; background:url('../images/go_top.png') no-repeat center; background-size:86px 86px;}
+
+#wrap .header{min-width:720px; height:90px; margin:0px auto;}
+#wrap .header ul{width:720px; position:relative; margin:0px auto;}
+#wrap .header ul li{float:left; position:relative; margin:0px auto;}
+#wrap .header ul li a img#h1{width:241px; height:90px;}
+#wrap .header ul li a img#h2{width:240px; height:90px;}
+#wrap .header ul li a img#h3{width:239px; height:90px;}
+
+#wrap #info{min-width:720px; height:496px; margin:0px auto; background:url('../images/m_info.jpg') no-repeat center; background-size:720px 482px; position:relative; top:753px;}
+#wrap #info a{position:relative; display:block; width:315px; height:61px; margin:0px auto; top:320px; background:url('../images/m_down.png') no-repeat center; background-size:315px 61px;}
+
+#wrap #intro{min-width:720px; height:878px; margin:0px auto; background:url('../images/m_intro.jpg') no-repeat center; background-size:720px 878px; position:relative; top:746px;}
+
+#wrap #btn{min-width:720px; height:81px; margin:0px auto; background:url('../images/m_btn.jpg') no-repeat center; background-size:720px 81px; position:relative; top:746px;}
+#wrap #btn ul{width:695px; position:relative; margin:0px auto; top:5px;}
+#wrap #btn ul li{float:left; position:relative; margin:0px auto;}
+#wrap #btn ul li:nth-child(1) a{display:block; width:223px; height:61px; background:url('../images/m_btn01.png') no-repeat; background-size:223px 61px; margin-right:6px;}
+#wrap #btn ul li:nth-child(2) a{display:block; width:223px; height:61px; background:url('../images/m_btn02.png') no-repeat; background-size:223px 61px; margin-right:6px;}
+#wrap #btn ul li:nth-child(3) a{display:block; width:223px; height:61px; background:url('../images/m_btn03.png') no-repeat; background-size:223px 61px;}
+
+#wrap #event{width:100%; height:184px; margin:0px auto; background:url('../images/m_event.jpg') no-repeat center; position:relative; top:746px;}
+#wrap #event a{position:relative; display:block; width:100%; height:184px; margin:0 auto;}

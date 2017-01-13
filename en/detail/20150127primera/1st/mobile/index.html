@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script>
+		//상단 탭버튼 제어
+		$(document).ready(function(){
+			$( "#h1" ).click(function() {
+				$("#h1").attr("src","./images/tab_01_on.gif");
+				$("#h2").attr("src","./images/tab_02_off.gif");
+				$("#h3").attr("src","./images/tab_03_off.gif");
+			});	
+			$( "#h2" ).click(function() {
+				$("#h1").attr("src","./images/tab_01_off.gif");
+				$("#h2").attr("src","./images/tab_02_on.gif");
+				$("#h3").attr("src","./images/tab_03_off.gif");
+			});	
+			$( "#h3" ).click(function() {
+				$("#h1").attr("src","./images/tab_01_off.gif");
+				$("#h2").attr("src","./images/tab_02_off.gif");
+				$("#h3").attr("src","./images/tab_03_on.gif");
+			});	
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="wrap">
+		<div id="go_top"><a href="#"></a></div>
+		<div class="header">
+			<ul>
+				<li><a href="#info"><img id="h1" src="images/tab_01_off.gif" alt="프리매니아 8기 모집" /></a></li>
+				<li><a href="#intro"><img id="h2" src="images/tab_02_off.gif" alt="프리매니아 활동 소개" /></a></li>
+				<li><a href="#event"><img id="h3" src="images/tab_03_off.gif" alt="이벤트" /></a></li>
+			</ul>
+		</div>
+		<div id="info"><a href="preview.html" target="_blank" name="지원서 양식 미리보기"></a></div>
+		<div id="intro"></div>
+		<div id="btn">
+			<ul>
+				<li><a href="http://www.primera.co.kr" target="_blank" name="프리메라 소개 보기"></a></li>
+				<li><a href="http://www.primera.co.kr/ko-kr/community/primania/about.html" target="_blank" name="프리매니아 소개 보기"></a></li>
+				<li><a href="http://www.primera.co.kr/ko-kr/community/primania.html" target="_blank" name="프리매니아 지난 활동 보기"></a></li>
+			</ul>
+		</div>
+		<div id="event"><a href="#" name="프리매니아 8기 모집 공유하기"></a></div>
+	</div>
+
+</body>
+</html>
